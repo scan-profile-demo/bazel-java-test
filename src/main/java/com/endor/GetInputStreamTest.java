@@ -1,4 +1,4 @@
-package com.endor;
+package com.org;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
@@ -19,7 +19,7 @@ public class GetInputStreamTest extends HttpServlet {
         doGet(request, response);
     }
 
-    private static final String POST_URL_GET_PARAMETER = "http://localhost:8080/endor-webapp/GetInputStreamInnerTest";
+    private static final String POST_URL_GET_PARAMETER = "http://localhost:8080/org-webapp/GetInputStreamInnerTest";
 
 	@Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

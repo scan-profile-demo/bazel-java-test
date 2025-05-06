@@ -1,4 +1,4 @@
-package com.endor;
+package com.org;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +15,7 @@ public class HttpURLConnectionExample {
     private static final String GET_URL = "http://localhost:8080";
 
     //private static final String POST_URL = "http://localhost:9090/SpringMVCExample/home";
-    private static final String POST_URL = "http://localhost:8080/endor-webapp/ExtraServlet";
+    private static final String POST_URL = "http://localhost:8080/org-webapp/ExtraServlet";
 
     private static final String POST_PARAMS = "userName=Pankaj";
 
@@ -167,7 +167,7 @@ public class HttpURLConnectionExample {
     }
     
     public static String sendTRACE() throws IOException {
-    	String TRACE_URL = "http://localhost:8080/endor-webapp/httptrace";
+    	String TRACE_URL = "http://localhost:8080/org-webapp/httptrace";
         URL obj = new URL(TRACE_URL);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("TRACE");

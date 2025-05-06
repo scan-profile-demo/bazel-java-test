@@ -1,4 +1,4 @@
-package com.endor;
+package com.org;
 import org.apache.commons.text.StringSubstitutor;
 
 public class stringsub {

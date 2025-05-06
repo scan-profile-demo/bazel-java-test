@@ -1,4 +1,4 @@
-package com.endor.wrapper;
+package com.org.wrapper;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletRequestWrapper;

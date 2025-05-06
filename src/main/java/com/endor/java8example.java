@@ -1,4 +1,4 @@
-package com.endor;
+package com.org;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;

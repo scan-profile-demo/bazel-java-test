@@ -1,4 +1,4 @@
-package com.endor;
+package com.org;
 
 
 import javax.servlet.ServletException;
@@ -29,10 +29,10 @@ public class NewSQLExitServlet1 extends HttpServlet {
     @Override
     public void init() throws ServletException {
         super.init();
-        connectionUrl =System.getProperty("endor_connection_url", "jdbc:oracle:thin:@10.0.22.108:1521:XE");
-        dbUser =System.getProperty("endor_db_user", "sys as sysdba");
-        dbPassword =System.getProperty("endor_db_password", "Psmo0601");
-        dbType =System.getProperty("endor_db_type", DB_TYPE_ORACLE);
+        connectionUrl =System.getProperty("org_connection_url", "jdbc:oracle:thin:@10.0.22.108:1521:XE");
+        dbUser =System.getProperty("org_db_user", "sys as sysdba");
+        dbPassword =System.getProperty("org_db_password", "Psmo0601");
+        dbType =System.getProperty("org_db_type", DB_TYPE_ORACLE);
 
     }
 
@@ -148,10 +148,10 @@ public class NewSQLExitServlet1 extends HttpServlet {
     }
 
     /** Shiva use the following java system properties instead of new connection function.
-        -Dendor_connection_url="jdbc:postgresql://localhost:5432/sqlinject?sslmode=disable"
-        -Dendor_db_user="postgres"
-        -Dendor_db_password=""Psqlpsmo@1"
-        -Dendor_db_type="Postgress"
+        -Dorg_connection_url="jdbc:postgresql://localhost:5432/sqlinject?sslmode=disable"
+        -Dorg_db_user="postgres"
+        -Dorg_db_password=""Psqlpsmo@1"
+        -Dorg_db_type="Postgress"
      */
     private Connection connectpsql() {
         Connection conn = null;
@@ -172,10 +172,10 @@ public class NewSQLExitServlet1 extends HttpServlet {
 
 
     /** Shiva use java system properties instead of new connection function.
-     -Dendor_connection_url="jdbc:postgresql://localhost:5432/sqlinject?sslmode=disable"
-     -Dendor_db_user="postgres"
-     -Dendor_db_password=""Psqlpsmo@1"
-     -Dendor_db_type="Postgress"
+     -Dorg_connection_url="jdbc:postgresql://localhost:5432/sqlinject?sslmode=disable"
+     -Dorg_db_user="postgres"
+     -Dorg_db_password=""Psqlpsmo@1"
+     -Dorg_db_type="Postgress"
      */
 
     private Connection connect() {

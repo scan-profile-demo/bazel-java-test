@@ -1,10 +1,10 @@
-package com.endor;
+package com.org;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
 public class HtmlUtil {
-    static String title = "ENDOR LABS Webapp";
+    static String title = "org LABS Webapp";
 
     public static void printMenu(HttpServletResponse response) {
         printMenuWithPrefix(response, "");
@@ -113,7 +113,7 @@ public class HtmlUtil {
     public static void startBody(HttpServletResponse response) {
         try {
             PrintWriter out = response.getWriter();
-            out.println("<body bgcolor=\"lightgray\" onload=\"loaded();\"  style=\"background-image: url('endor.jpg');background-repeat: no-repeat;  background-attachment: fixed;\n"
+            out.println("<body bgcolor=\"lightgray\" onload=\"loaded();\"  style=\"background-image: url('org.jpg');background-repeat: no-repeat;  background-attachment: fixed;\n"
             		+ "  background-size: 100% 100%;\">");
             out.println("<h1><center>" + HtmlUtil.title + "</center></h1>");
         } catch (Exception e) {

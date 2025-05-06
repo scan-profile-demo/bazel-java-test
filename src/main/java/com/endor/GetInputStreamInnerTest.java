@@ -1,4 +1,4 @@
-package com.endor;
+package com.org;
 
 
 import javax.servlet.ServletException;
@@ -93,10 +93,10 @@ public class GetInputStreamInnerTest extends HttpServlet {
     @Override
     public void init() throws ServletException {
         super.init();
-        connectionUrl =System.getProperty("endor_connection_url", "jdbc:oracle:thin:@10.0.22.108:1521:XE");
-        dbUser =System.getProperty("endor_db_user", "sys as sysdba");
-        dbPassword =System.getProperty("endor_db_password", "Psmo0601");
-        dbType =System.getProperty("endor_db_type", DB_TYPE_ORACLE);
+        connectionUrl =System.getProperty("org_connection_url", "jdbc:oracle:thin:@10.0.22.108:1521:XE");
+        dbUser =System.getProperty("org_db_user", "sys as sysdba");
+        dbPassword =System.getProperty("org_db_password", "Psmo0601");
+        dbType =System.getProperty("org_db_type", DB_TYPE_ORACLE);
 
     }
 

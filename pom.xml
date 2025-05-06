@@ -3,11 +3,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.endor.webapp</groupId>
-	<artifactId>endor-java-webapp-demo-java8</artifactId>
+	<groupId>com.org.webapp</groupId>
+	<artifactId>org-java-webapp-demo-java8</artifactId>
 	<version>24.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>endor-webapp Maven Webapp</name>
+	<name>org-webapp Maven Webapp</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 	<properties>
@@ -152,7 +152,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>endor-java-webapp-demo</finalName>
+		<finalName>org-java-webapp-demo</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
 			<plugins>
 				<plugin>

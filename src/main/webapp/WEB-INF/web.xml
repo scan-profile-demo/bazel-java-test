@@ -10,45 +10,45 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>BooksServlet</servlet-name>
-    <servlet-class>com.endor.BooksServlet</servlet-class>
+    <servlet-class>com.org.BooksServlet</servlet-class>
   </servlet>
     <servlet>
     <servlet-name>HttpTrace</servlet-name>
-    <servlet-class>com.endor.HttpTrace</servlet-class>
+    <servlet-class>com.org.HttpTrace</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>ExecuteServlet</servlet-name>
-    <servlet-class>com.endor.ExecuteServlet</servlet-class>
+    <servlet-class>com.org.ExecuteServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>OSCommandServlet</servlet-name>
-    <servlet-class>com.endor.OSCommandServlet</servlet-class>
+    <servlet-class>com.org.OSCommandServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>AppServlet</servlet-name>
-    <servlet-class>com.endor.AppServlet</servlet-class>
+    <servlet-class>com.org.AppServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>AsyncServlet</servlet-name>
-    <servlet-class>com.endor.AsyncServlet</servlet-class>
+    <servlet-class>com.org.AsyncServlet</servlet-class>
     <async-supported>true</async-supported>
   </servlet>
   <servlet>
     <servlet-name>Deserialize1</servlet-name>
-    <servlet-class>com.endor.Deserialize1</servlet-class>
+    <servlet-class>com.org.Deserialize1</servlet-class>
     <async-supported>true</async-supported>
   </servlet>
   <servlet>
     <servlet-name>ElExpression</servlet-name>
-    <servlet-class>com.endor.ElExpression</servlet-class>
+    <servlet-class>com.org.ElExpression</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>FileUpload</servlet-name>
-    <servlet-class>com.endor.FileUploadServlet</servlet-class>
+    <servlet-class>com.org.FileUploadServlet</servlet-class>
   </servlet>
     <servlet>
     <servlet-name>XmlXXE</servlet-name>
-    <servlet-class>com.endor.XmlXXE</servlet-class>
+    <servlet-class>com.org.XmlXXE</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -93,7 +93,7 @@
   </servlet-mapping>
   <filter>
     <filter-name>CSPFilter</filter-name>
-    <filter-class>com.endor.CSPFilter</filter-class>
+    <filter-class>com.org.CSPFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>CSPFilter</filter-name>
@@ -101,7 +101,7 @@
   </filter-mapping>
   <filter>
     <filter-name>WrapperFilter</filter-name>
-    <filter-class>com.endor.wrapper.WrapperFilter</filter-class>
+    <filter-class>com.org.wrapper.WrapperFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>WrapperFilter</filter-name>
@@ -109,7 +109,7 @@
   </filter-mapping>
   <servlet>
     <servlet-name>Servlet</servlet-name>
-    <servlet-class>com.endor.wrapper.WrapperServlet</servlet-class>
+    <servlet-class>com.org.wrapper.WrapperServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Servlet</servlet-name>
@@ -131,7 +131,7 @@
   </filter-mapping> 
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>endor-webapp</web-resource-name>
+      <web-resource-name>org-webapp</web-resource-name>
       <url-pattern>/hsts/*</url-pattern>
       <http-method>GET</http-method>
       <http-method>POST</http-method>
